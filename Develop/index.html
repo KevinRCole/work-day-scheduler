@@ -40,11 +40,12 @@
           <td class="eventTime">9AM</td>
           
           <td class="myEvent col-10">
-            <input type="text" id="9amEvent" class="form-control">
+            <input type="text" name="eventInput-9am" id="event-9am" class="form-control" value = "">
+            
           </td>
-          
+
           <td>
-            <input class='myBtnClass form-control' type='button' value='Save'>
+            <button id="btn9" type="button" class="form-control">Save</button>
           </td>
 
         </tr>
@@ -55,13 +56,14 @@
           <td class="eventTime">10AM</td>
 
           <td class="myEvent">
-            <input type="text" id="10amEvent" class="form-control">
+            <input type="text" name="eventInput-10am" id="event-10am" class="form-control">
           </td>
 
-          <td class="eventTime">
-            <input class='myBtnClass form-control' type='button' value='Save'/></td>
+      
+          <td>
+            <button id="btn10" type="button" class= "form-control">Save</button>
           </td>
-       
+
         </tr>
 
         <!-- table row for 11AM event  -->
@@ -70,27 +72,28 @@
           <td class="eventTime">11AM</td>
           
           <td class="myEvent">
-            <input type="text" id="11amEvent" class="form-control">
+            <form><input type="text" name="eventInput-11am" id="event-11am" class="form-control"></form>
           </td>
 
           <td>
-            <input class='myBtnClass form-control' type='button' value='Save'>
+            <button id="btn11" type='button' class= "form-control">Save</button>
           </td>
 
         </tr>
 
 
         <!-- table row for 12PM event -->
+        
         <tr class="myRow">
 
           <td>12PM</td>
           
           <td class="myEvent">
-            <input type="text" id="12pmEvent" class="form-control">
+            <input type="text" name="eventInput-12pm" id="event-12pm" class="form-control">
           </td>
           
           <td>
-            <input class='mySaveButton form-control' type='button' value='Save'/></td>
+            <button id="btn12" type="button" class='form-control'>Save</button>
           </td>  
 
         </tr>
@@ -101,11 +104,11 @@
           <td>1PM</td>
                   
             <td class="myEvent">
-              <input type="text" id="1pmEvent" class="form-control">
+              <input type="text" name=eventInput-1pm" id="event-1pm" class="form-control">
             </td>
                   
             <td>
-              <input class='mySaveButton form-control' type='button' value='Save'/></td>
+              <button id="btn1" type="button" class='form-control'>Save</button>
             </td>  
 
           </tr>
@@ -116,11 +119,11 @@
           <td>2PM</td>
                   
             <td class="myEvent">
-              <input type="text" id="2pmEvent" class="form-control">
+              <input type="text" name="eventInput-2pm" id="event-2pm" class="form-control">
             </td>
                   
             <td>
-              <input class='mySaveButton form-control' type='button' value='Save'/></td>
+              <button id="btn2" type="button" class='form-control'>Save</button>
             </td>  
 
           </tr>
@@ -130,12 +133,14 @@
 
           <td>3PM</td>
             
-            <td class="myEvent">
-            <input type="text" id="3pmEvent" class="form-control">
+          <td class="myEvent">
+            <input type="text" name="eventInput-3pm" id="event-3pm" class="form-control">
           </td>
             
           <td>
-            <input class='mySaveButton form-control' type='button' value='Save'/></td>
+           
+            <button id="btn3" type="button" class='form-control'>Save</button>
+
           </td>  
 
         </tr>
@@ -146,11 +151,11 @@
         <td>4PM</td>
           
           <td class="myEvent">
-          <input type="text" id="4pmEvent" class="form-control">
+          <input type="text" name="eventInput-4pm" id="event-4pm" class="form-control">
         </td>
           
         <td>
-          <input class='mySaveButton form-control' type='button' value='Save'/></td>
+          <button id="btn4" type="button" class='form-control'>Save</button>
         </td>  
 
       </tr>
@@ -161,11 +166,11 @@
         <td>5PM</td>
           
           <td class="myEvent">
-          <form><input type="text" name="5pmEvent" id="5pmEvent" class="form-control"><form>
+          <form><input type="text" name="eventInput-5pm" id="event-5pm" class="form-control"><form>
         </td>
           
         <td>
-          <input class='mySaveButton form-control' type='button' value='Save'/></td>
+          <button id="btn5" type="button" class='form-control'>Save</button>
         </td>  
 
       </tr>
@@ -175,9 +180,7 @@
     </table>
     </div>
     
-    
-    
-    
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
@@ -188,5 +191,6 @@
 
     <script src="./script.js"></script>
 
+  
   </body>
 </html>
