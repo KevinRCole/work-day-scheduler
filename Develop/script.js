@@ -26,7 +26,34 @@ var event3pmBtn = document.getElementById("btn3");
 var event4pmBtn = document.getElementById("btn4");
 var event5pmBtn = document.getElementById("btn5");
 
-function displayDate() {
+
+
+var presentHour = moment().format('h a');
+// console.log(presentHour);
+
+var eventTimeArray = Array.from(document.querySelectorAll(".eventTime"));
+// console.log(eventTimeArray);
+
+var eventArray = Array.from(document.querySelectorAll(".event-input"));
+// console.log(eventArray);
+
+
+// for (let i =0; i < eventTimeArray.length; i++) {
+//   if (eventTimeArray[i] = presentHour) {
+//     document.eventArray[i].style.backgroundColor = ;
+//   } else {document.eventArray[i].style.backgroundColr = "blue";}
+//   };
+// // //   document.eventArray[i].style.backgroundColor = "red"}
+// // };
+
+//   // if (eventTimeArray[i] = presentHour) {
+//   //   document.eventArray[i].style.backgroundColor = "red";
+//   // } else {document.eventArray[i].style.backgroundColor = "blue";
+//   //   };
+
+
+
+  function displayDate() {
   var dateToday = moment().format('MMM DD, YYYY');
   dateDisplayEl.text(dateToday);
 }
@@ -108,36 +135,37 @@ event11amBtn.addEventListener("click", function(event) {
           
           var event5pm = document.querySelector("#event-5pm").value;
             // console.log(event2pm);
-          localStorage.setItem("event4pm", event4pm);
+          localStorage.setItem("event5pm", event5pm);
           
         }); 
      
 
 
-    
-
+// var test = localStorage.getItem("event9am");
+// console.log(test);
+// $(event9amInput).val(localStorage.getItem("event9am"));
 
 
 function displayStoredEvents() {
 
 $(event9amInput).val(localStorage.getItem("event9am"));
 $(event10amInput).val(localStorage.getItem("event10am"));
-$(event9amInput).val(localStorage.getItem("event11am"));
-$(event10amInput).val(localStorage.getItem("event12pm"));
-$(event9amInput).val(localStorage.getItem("event1pm"));
-$(event10amInput).val(localStorage.getItem("event2pm"));
-$(event9amInput).val(localStorage.getItem("event3pm"));
-$(event10amInput).val(localStorage.getItem("event4pm"));
-$(event9amInput).val(localStorage.getItem("event5pm"));
+$(event11amInput).val(localStorage.getItem("event11am"));
+$(event12pmInput).val(localStorage.getItem("event12pm"));
+$(event1pmInput).val(localStorage.getItem("event1pm"));
+$(event2pmInput).val(localStorage.getItem("event2pm"));
+$(event3pmInput).val(localStorage.getItem("event3pm"));
+$(event4pmInput).val(localStorage.getItem("event4pm"));
+$(event5pmInput).val(localStorage.getItem("event5pm"));
 
 };
 
 displayDate();
+// setColors();
 displayStoredEvents();
 
 // console.log(dateDisplayEL);
 
- 
 
   // alert ("Hello World!");
 
