@@ -1,7 +1,7 @@
 # Kevin Cole's UW Coding Bootcamp Javascript Work Day Scheduler Project
 
 
- <img src="selfie.jpg" alt="Picture of Kevin" height = "120" width = "120" />
+ <img src="./Assets/selfie.jpg" alt="Picture of Kevin" height = "120" width = "120" />
 
 
 ## March 27, 2022
